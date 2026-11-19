@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ecológic Planet – Soluciones de Energía Solar</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Paleta corporativa: verde y oscuro */
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+            background-color: #111827; /* gray-900 */
+            color: #f3f4f6; /* gray-100 */
+        }
+        .green-text {
+            color: #34d399; /* green-400 */
+        }
+        .section-title {
+            color: #34d399; /* green-400 */
+            font-size: 1.875rem; /* text-3xl */
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            border-bottom-width: 2px;
+            border-color: #059669; /* green-600 */
+            padding-bottom: 0.5rem;
+        }
+        .card-hover {
+            transition: transform 0.3s ease;
+        }
+        .card-hover:hover {
+            transform: translateY(-5px);
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header / Hero -->
+    <header class="relative h-screen flex items-center justify-center text-white overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <img src="https://picsum.photos/seed/solarhero/1920/1080" alt="Fondo de energía solar" class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-black bg-opacity-65"></div>
+        </div>
+
+        <div class="relative z-10 text-center px-4 max-w-4xl">
+            <h1 class="text-5xl md:text-7xl font-extrabold mb-4 green-text drop-shadow-lg">ECOLÓGIC PLANET</h1>
+            <p class="text-xl md:text-2xl mb-8 italic">"Transformando la radiación solar en independencia y ahorro para tu hogar o PYM"</p>
+
+            <div class="flex flex-col md:flex-row justify-center items-center gap-4 text-sm md:text-base">
+                <span class="flex items-center gap-2">
+                    <svg class="w-5 h-5 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0zM15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                    Ancud, Región de Los Lagos, Chile
+                </span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Quiénes Somos / Misión / Visión -->
+    <section id="about" class="py-20 px-4 max-w-6xl mx-auto">
+        <h2 class="section-title text-center">Quiénes Somos, Misión y Visión</h2>
+
+        <div class="grid md:grid-cols-3 gap-8 text-center">
+            <div class="bg-gray-800 rounded-lg shadow-lg p-6 card-hover">
+                <h3 class="text-xl font-semibold mb-3 text-green-300">Quiénes Somos</h3>
+                <p class="text-gray-300">Empresa regional enfocada en soluciones de energía limpia y eficiente adaptadas al clima del sur de Chile.</p>
+            </div>
+
+            <div class="bg-gray-800 rounded-lg shadow-lg p-6 card-hover">
+                <h3 class="text-xl font-semibold mb-3 text-green-300">Misión</h3>
+                <p class="text-gray-300">Brindar independencia energética y ahorro económico con instalaciones solares seguras.</p>
+            </div>
+
+            <div class="bg-gray-800 rounded-lg shadow-lg p-6 card-hover">
+                <h3 class="text-xl font-semibold mb-3 text-green-300">Visión</h3>
+                <p class="text-gray-300">Ser líderes en generación distribuida en la Región de Los Lagos.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Nuestros Kits Solares -->
+    <section id="kits" class="py-20 bg-gray-900 px-4">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="section-title text-center">Nuestros Kits Solares</h2>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Kit Básico -->
+                <div class="bg-gray-800 rounded-lg shadow-lg overflow-hidden card-hover">
+                    <div class="p-6 border-b border-gray-700">
+                        <h3 class="text-2xl font-bold mb-2 text-green-200">Kit Residencial Básico (On-Grid)</h3>
+                        <p class="text-sm text-gray-400 mb-1"><strong>Sistema:</strong> 3.0 kWp (6 paneles de 500W + inversor monofásico)</p>
+                        <p class="text-sm text-gray-400 mb-1"><strong>Ideal para:</strong> casas urbanas con consumo moderado (iluminación LED y electrodomésticos)</p>
+                        <p class="text-sm font-semibold text-green-400">Beneficio: Ley Net Billing (inyecta excedentes a la red pública para descuentos en la cuenta de luz)</p>
+                    </div>
+                    <div class="p-6 bg-gray-750">
+                        <ul class="list-disc list-inside text-sm text-gray-300 space-y-1">
+                            <li>Paneles solares de alta eficiencia</li>
+                            <li>Inversor monofásico con monitor LCD</li>
+                            <li>Instalación profesional y garantía de 10 años</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Kit Pro -->
+                <div class="bg-gray-800 rounded-lg shadow-lg overflow-hidden card-hover">
+                    <div class="p-6 border-b border-gray-700">
+                        <h3 class="text-2xl font-bold mb-2 text-green-200">Kit Residencial Pro &amp; Respaldo (Híbrido)</h3>
+                        <p class="text-sm text-gray-400 mb-1"><strong>Sistema:</strong> 5.5 kWp (10 paneles + inversor híbrido + batería de litio 5.12 kWh)</p>
+                        <p class="text-sm text-gray-400 mb-1"><strong>Ideal para:</strong> hogares en zonas rurales o con cortes frecuentes de luz</p>
+                        <p class="text-sm font-semibold text-green-400">Beneficio: Autonomía Off-Grid (almacena energía para la noche o cortes, manteniendo iluminación y calefacción)</p>
+                    </div>
+                    <div class="p-6 bg-gray-750">
+                        <ul class="list-disc list-inside text-sm text-gray-300 space-y-1">
+                            <li>10 paneles bifaciales de última generación</li>
+                            <li>Inversor híbrido con gestión inteligente de carga</li>
+                            <li>Batería de litio de 5.12 kWh para autonomía total</li>
+                            <li>Sistema de monitoreo móvil incluido</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Kit Comercial -->
+                <div class="bg-gray-800 rounded-lg shadow-lg overflow-hidden card-hover">
+                    <div class="p-6 border-b border-gray-700">
+                        <h3 class="text-2xl font-bold mb-2 text-green-200">Kit Comercial e Industrial (Trifásico)</h3>
+                        <p class="text-sm text-gray-400 mb-1"><strong>Sistema:</strong> 15.0 kWp (26 paneles bifaciales de 580W + inversor trifásico)</p>
+                        <p class="text-sm text-gray-400 mb-1"><strong>Ideal para:</strong> PYMES, bodegas o talleres con alto consumo diurno</p>
+                        <p class="text-sm font-semibold text-green-400">Beneficio: Ahorro masivo y Net Billing, reduciendo costos operacionales de maquinarias</p>
+                    </div>
+                    <div class="p-6 bg-gray-750">
+                        <ul class="list-disc list-inside text-sm text-gray-300 space-y-1">
+                            <li>26 paneles bifaciales de 580W cada uno</li>
+                            <li>Inversor trifásico de 15 kW con monitor industrial</li>
+                            <li>Estructura de montaje reforzada para grandes instalaciones</li>
+                            <li>Soporte técnico especializado las 24/7</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Publicitario (Spot) -->
+    <section id="video" class="py-20 px-4 max-w-4xl mx-auto">
+        <h2 class="section-title text-center">Conoce nuestro spot publicitario</h2>
+        <video controls class="w-full rounded-lg shadow-lg" poster="">
+            <source src="spot.mp4" type="video/mp4">
+            Tu navegador no soporta la reproducción de video.
+        </video>
+    </section>
+
+    <!-- Calculadora Solar Interactiva -->
+    <section id="calculator" class="py-20 bg-gray-900 px-4">
+        <div class="max-w-3xl mx-auto">
+            <h2 class="section-title text-center">Calculadora Solar Interactiva</h2>
+
+            <form id="solarForm" class="bg-gray-800 p-8 rounded-lg shadow-lg space-y-6">
+                <div>
+                    <label for="watts" class="block mb-2 text-sm font-medium text-green-300">Consumo eléctrico promedio (Watts)</label>
+                    <input type="number" id="watts" name="watts" min="1" step="any" required
+                        class="w-full px-4 py-2 bg-gray-700 border border-gray-600 rounded-md text-gray-100 focus:outline-none focus:ring-2 focus:ring-green-500"
+                        placeholder="Ej: 1500">
+                </div>
+
+                <div>
+                    <label for="period" class="block mb-2 text-sm font-medium text-green-300">Periodo de cálculo</label>
+                    <select id="period" name="period"
+                        class="w-full px-4 py-2 bg-gray-700 border border-gray-600 rounded-md text-gray-100 focus:outline-none focus:ring-2 focus:ring-green-500">
+                        <option value="monthly">Cálculo Mensual</option>
+                        <option value="annual">Cálculo Anual</option>
+                    </select>
+                </div>
+
+                <button type="button" id="calcBtn" class="w-full py-3 bg-green-600 hover:bg-green-500 text-gray-900 font-bold rounded-md transition">
+                    Calcular Ahorro
+                </button>
+            </form>
+
+            <div id="result" class="mt-8 hidden bg-gray-800 p-6 rounded-lg shadow-lg text-gray-200 space-y-4">
+                <h3 class="text-2xl font-bold text-green-300">Resultados del calculo</h3>
+                <p id="consumptionSummary" class="text-sm text-gray-300"></p>
+                <p id="recKitSummary" class="text-base font-semibold text-green-400"></p>
+                <p id="worthSummary" class="text-sm text-gray-200"></p>
+                <div id="comparative"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-950 py-8 px-4 text-center text-sm text-gray-400 border-t border-gray-800">
+        <p class="mb-1 text-green-400 font-semibold">ECOLÓGIC PLANET – Ancud, Región de Los Lagos, Chile</p>
+        <p>Proyecto Escolar Liceo El Pilar</p>
+    </footer>
+
+    <script>
+        (function () {
+            // 3.0 kWp On-Grid, 5.5 kWp Híbrido y 15.0 kWp Trifásico
+            const kits = [
+                {
+                    name: "Kit Residencial Básico (On-Grid)",
+                    kwp: 3.0,
+                    cost: 3200000
+                },
+                {
+                    name: "Kit Residencial Pro & Respaldo (Híbrido)",
+                    kwp: 5.5,
+                    cost: 5800000
+                },
+                {
+                    name: "Kit Comercial e Industrial (Trifásico)",
+                    kwp: 15.0,
+                    cost: 12500000
+                }
+            ];
+
+            const TARIFA_CLP_KWH = 185; // Referencia CLP por kWh
+            const GEN_MONTHLY_PER_KWP = 100; // kWh/mes por cada 1 kWp en el sur de Chile
+
+            const form = document.getElementById("solarForm");
+            const calcBtn = document.getElementById("calcBtn");
+            const wattsInput = document.getElementById("watts");
+            const periodSelect = document.getElementById("period");
+            const resultDiv = document.getElementById("result");
+            const consumptionSummary = document.getElementById("consumptionSummary");
+            const recKitSummary = document.getElementById("recKitSummary");
+            const worthSummary = document.getElementById("worthSummary");
+            const comparativeDiv = document.getElementById("comparative");
+
+            function formatClp(amount) {
+                return "$" + Math.round(amount).toLocaleString("es-CL") + " CLP";
+            }
+
+            function runCalculation(event) {
+                if (event) {
+                    event.preventDefault();
+                }
+
+                const watts = parseFloat(wattsInput.value);
+                if (isNaN(watts) || watts <= 0) {
+                    resultDiv.classList.remove("hidden");
+                    consumptionSummary.textContent = "Ingresa una cantidad válida de Watts mayor a 0.";
+                    recKitSummary.textContent = "";
+                    worthSummary.textContent = "";
+                    comparativeDiv.innerHTML = "";
+                    return;
+                }
+
+                const isAnnual = periodSelect.value === "annual";
+                const monthsMultiplier = isAnnual ? 12 : 1;
+                const periodLabel = isAnnual ? "anual" : "mensual";
+
+                // Estimación de energía demandada a partir de potencia promedio (W)
+                // Equivalencia base: (W / 1000) * 24h * 30 días = W * 0.72 kWh/mes
+                const demandKwh = watts * 0.72 * monthsMultiplier;
+                const estimatedSpendClp = demandKwh * TARIFA_CLP_KWH;
+
+                // Kit recomendado según generación del periodo frente a la demanda
+                let recommendedKit = kits[kits.length - 1];
+                for (const kit of kits) {
+                    const kitGen = kit.kwp * GEN_MONTHLY_PER_KWP * monthsMultiplier;
+                    if (kitGen >= demandKwh) {
+                        recommendedKit = kit;
+                        break;
+                    }
+                }
+
+                const rows = kits.map((kit) => {
+                    const generationKwh = kit.kwp * GEN_MONTHLY_PER_KWP * monthsMultiplier;
+                    // Energía compensada/aprovechada limitada al consumo del periodo
+                    const coveredKwh = Math.min(generationKwh, demandKwh);
+                    const savingsClp = coveredKwh * TARIFA_CLP_KWH;
+                    const annualSavingsClp = isAnnual ? savingsClp : savingsClp * 12;
+                    const roiYears = annualSavingsClp > 0 ? (kit.cost / annualSavingsClp) : null;
+
+                    return {
+                        ...kit,
+                        generationKwh,
+                        coveredKwh,
+                        savingsClp,
+                        roiYears
+                    };
+                });
+
+                const recRow = rows.find((r) => r.name === recommendedKit.name);
+                const paybackText = recRow && recRow.roiYears
+                    ? `Retorno estimado para ${recommendedKit.name}: ~${recRow.roiYears.toFixed(1)} años.`
+                    : "Retorno sujeto al perfil de consumo.";
+
+                consumptionSummary.textContent =
+                    `Consumo estimado (${periodLabel}) para ${watts.toLocaleString("es-CL")} W: ${demandKwh.toFixed(1)} kWh (${formatClp(estimatedSpendClp)} aprox. a $185/kWh).`;
+                recKitSummary.textContent =
+                    `Kit recomendado: ${recommendedKit.name} (${recommendedKit.kwp.toFixed(1)} kWp).`;
+                worthSummary.textContent = paybackText;
+
+                let cardsHtml = '<div class="grid md:grid-cols-3 gap-4 mt-4">';
+                rows.forEach((item) => {
+                    const isSelected = item.name === recommendedKit.name;
+                    const borderClass = isSelected ? "border-green-400 ring-1 ring-green-400" : "border-gray-600";
+                    cardsHtml += `
+                        <div class="p-4 rounded-lg bg-gray-700 border ${borderClass} space-y-1">
+                            <p class="font-bold text-green-300 text-sm">${item.name}</p>
+                            <p class="text-xs text-gray-300">Generación ${periodLabel}: <strong>${item.generationKwh.toFixed(1)} kWh</strong></p>
+                            <p class="text-xs text-gray-300">Energía ahorrada: <strong>${item.coveredKwh.toFixed(1)} kWh</strong></p>
+                            <p class="text-sm text-green-400 font-semibold">Ahorro ${periodLabel}: ${formatClp(item.savingsClp)}</p>
+                        </div>
+                    `;
+                });
+                cardsHtml += "</div>";
+                comparativeDiv.innerHTML = cardsHtml;
+
+                resultDiv.classList.remove("hidden");
+                resultDiv.scrollIntoView({ behavior: "smooth", block: "nearest" });
+            }
+
+            calcBtn.addEventListener("click", runCalculation);
+            form.addEventListener("submit", runCalculation);
+        })();
+    </script>
+</body>
+</html>
